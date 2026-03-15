@@ -1,0 +1,20 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.dll
+*.exe
+*.pdb
+
+## IDE
+.vs/
+.vscode/
+*.sln.docstates
+.idea/
+
+## FakeSsh
+host_key.pem
+logs/
+appsettings.Development.json
