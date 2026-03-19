@@ -58,7 +58,8 @@ public class ChatService
             messages,
             stream = true,
             temperature = 0.6,
-            max_tokens = _config.OpenAi.MaxTokens
+            max_tokens = _config.OpenAi.MaxTokens,
+            enable_thinking = false,
         };
 
         var json = JsonSerializer.Serialize(body);
@@ -80,14 +81,14 @@ public class ChatService
                 var errorBody = await response.Content.ReadAsStringAsync(ct);
                 _logger.LogError("OpenAI API returned {Status}: {Body}",
                     (int)response.StatusCode, errorBody.Length > 500 ? errorBody[..500] : errorBody);
-                errorMessage = "bash: internal error: AI service unavailable\n";
+                errorMessage = "bash: internal error: bash service unavailable\n";
                 response = null!;
             }
         }
         catch (Exception ex)
         {
             _logger.LogError(ex, "OpenAI API request failed");
-            errorMessage = "bash: internal error: AI service unavailable\n";
+            errorMessage = "bash: internal error: bash service unavailable\n";
             response = null!;
         }
 
