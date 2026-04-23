@@ -2,6 +2,8 @@
 
 基于 .NET 10 构建的仿真SSH服务端，使用 OpenAI 兼容 API 模拟真实的 Debian 12 服务器环境。攻击者连接后将与 AI 驱动的虚拟终端交互，所有操作被详细记录。
 
+[实际开放ssh测试了一个月，AI生成的分析报告。](ssh_log_analysis_report.md)
+
 ## 功能特性
 
 - SSH 服务端，支持密码认证（FxSsh 1.3.0）
