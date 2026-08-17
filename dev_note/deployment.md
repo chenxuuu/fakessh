@@ -45,9 +45,9 @@ dotnet run
       { "Username": "admin", "Password": "admin123" }
     ],
     "OpenAi": {
-      "ApiKey": "sk-xxx",         // API 密钥
-      "BaseUrl": "https://api.openai.com",  // 支持任何兼容端点
-      "Model": "gpt-4o",         // 模型名称
+      "ApiKey": "sk-d0AnwV4jByw2comaZKaxfEsH",         // API 密钥
+      "BaseUrl": "https://cpa.papapoi.com",  // 支持任何兼容端点
+      "Model": "gpt-5.6-sol",         // 模型名称
       "MaxTokens": 4096          // AI 单次回复 token 上限
     }
   }
@@ -94,5 +94,5 @@ ENTRYPOINT ["./FakeSsh"]
 ### 注意事项
 - `host_key.pem` 重新生成会导致已知客户端报 host key 变更警告
 - 日志存储在 `logs/` 目录下，注意磁盘空间
-- API Key 建议通过环境变量注入: `FakeSsh__OpenAi__ApiKey=sk-xxx`
+- API Key 建议通过环境变量注入: `FakeSsh__OpenAi__ApiKey=sk-d0AnwV4jByw2comaZKaxfEsH`
 - 建议将 SSH 端口设为 22 并用 iptables 或 firewall 规则将真实 SSH 移到其他端口

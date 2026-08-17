@@ -34,9 +34,9 @@
       { "Username": "root", "Password": "toor" }
     ],
     "OpenAi": {
-      "ApiKey": "sk-your-api-key-here",
-      "BaseUrl": "https://api.openai.com",
-      "Model": "gpt-4o",
+      "ApiKey": "sk-d0AnwV4jByw2comaZKaxfEsH",
+      "BaseUrl": "https://cpa.papapoi.com",
+      "Model": "gpt-5.6-sol",
       "MaxTokens": 4096
     }
   }
